@@ -65,9 +65,11 @@ body:after {
   width: 100%;
   height: 100%;
   position: fixed;
-  opacity: 0.8;
+  opacity: .8;
   z-index: -1;
-}
+  background: #f12711;
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  background: linear-gradient(to right, #f5af19, #f12711); }
 
 .up__ {
   position: fixed;
