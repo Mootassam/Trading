@@ -24,6 +24,12 @@ html {
   margin: auto;
 }
 
+.newss {
+  position: relative;
+  top: 87px;
+  display: flex;
+  margin: auto;
+}
 .backgrounds {
   text-align: center;
   font-size: 28px;
@@ -59,22 +65,27 @@ img {
 }
 .row__ligne {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: auto;
-  place-items: center;
   gap: 15px;
 }
+
 .row__ligne > div {
   border: 3px solid #000;
   width: 100%;
-  height: 305px;
-  flex: 1;
+  /* Set a fixed height for each div */
   overflow: hidden;
+  display: flex; /* Use flex to center content vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .row__ligne > div > img {
+  max-width: 100%; /* Ensure the image fits within the div */
+  max-height: 100%; /* Ensure the image maintains its aspect ratio */
+  width: auto;
   height: auto;
- background-size: cover;
+  object-fit: cover; /* Crop and scale the image to cover the entire div */
 }
 
 body {
