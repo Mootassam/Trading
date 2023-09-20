@@ -57,6 +57,25 @@ img {
   color: white !important;
   font-weight: 500;
 }
+.row__ligne {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  place-items: center;
+  gap: 15px;
+}
+.row__ligne > div {
+  border: 3px solid #000;
+  width: 100%;
+  height: 305px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.row__ligne > div > img {
+  height: auto;
+ background-size: cover;
+}
 
 body {
   background-size: cover;
