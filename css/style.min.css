@@ -45,6 +45,15 @@ html {
   margin-top: 60px;
 }
 
+.center__spaces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  padding-bottom: 60px;
+}
+
 #background-video {
   width: 100vw;
   height: 100vh;
@@ -79,8 +88,6 @@ img {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-
-
 
 body {
   background-size: cover;
@@ -504,12 +511,11 @@ a {
   height: 250px;
   object-fit: cover;
 }
-.row__item img { 
+.row__item img {
   width: 100% !important;
   height: 300px !important;
   object-fit: cover !important;
 }
-
 
 .blog-title h4 {
   color: #000;
