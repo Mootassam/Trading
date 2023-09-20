@@ -16,6 +16,14 @@ html {
   cursor: pointer;
 }
 
+.elButtonMains {
+  color: rgb(32, 22, 82);
+  background: rgb(255, 192, 0);
+  font-size: 36px;
+  padding: 12px !important;
+  font-weight: bold;
+  cursor: pointer;
+}
 .news {
   position: relative;
   top: 87px;
@@ -393,6 +401,8 @@ a {
   .jumbotron {
     min-height: 80vh;
   }
+
+  
 }
 .jumbotron .container {
   position: relative;
@@ -662,6 +672,9 @@ footer {
 .blog-content .img.float-right {
   margin: 15px 0 15px 15px;
 }
+.small__size { 
+  display: none;
+}
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .boxed-page {
@@ -679,12 +692,96 @@ footer {
     margin-top: 15px;
   }
   #gtco-header-navbar {
-    padding-left: 15px;
+    padding-left: 15px !important;
+  
+  }
+
+  .news {
+    left: 0px;
+    left: -20px;
+  }
+
+  .elButtonMains {
+    color: rgb(32, 22, 82);
+    background: rgb(255, 192, 0);
+    font-size: 26px;
+    padding: 12px !important;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .jumbotron {
     background-color: #fff;
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0;
+    overflow: hidden;
+    min-height: 500px;
+  }
+  .small__size{ 
+    display: block;
+  }
+
+
+  .--fontsize {
+    font-size: 39px !important;
   }
 }
 
+
+
+
 @media (max-width: 767px) {
+  
+
+  #gtco-header-navbar {
+    padding-left: 15px !important;
+  
+  }
+
+  .news {
+    left: 0px;
+    left: -20px;
+  }
+
+  .elButtonMains {
+    color: rgb(32, 22, 82);
+    background: rgb(255, 192, 0);
+    font-size: 15px;
+    padding: 12px !important;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .jumbotron {
+    background-color: #fff;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0;
+    overflow: hidden;
+    min-height: 500px;
+  }
+  .small__size{ 
+    display: block;
+  }
+  .--fontsize {
+    font-size: 30px !important;
+  }
   .boxed-page {
     margin: 4rem 15px;
   }
@@ -709,3 +806,4 @@ footer {
     flex-direction: column;
   }
 }
+
